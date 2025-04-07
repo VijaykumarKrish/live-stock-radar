@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { fetchStockData, StocksResponse } from "@/services/stockApi";
 
-export const useStockData = (refreshInterval = 30000) => {
+export const useStockData = (refreshInterval = 5000) => {
   const [data, setData] = useState<StocksResponse | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
