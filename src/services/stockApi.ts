@@ -17,7 +17,8 @@ export interface StocksResponse {
 // Fetch stock data from the local API server
 export const fetchStockData = async (): Promise<StocksResponse> => {
   try {
-    const baseUrl = "http://localhost:5000/";
+    #const baseUrl = "http://localhost:5000/";
+    const baseUrl = "https://my-tracker-stock.koyeb.app/";
     const response = await fetch(`${baseUrl}api/stocks`);
     
     if (!response.ok) {
