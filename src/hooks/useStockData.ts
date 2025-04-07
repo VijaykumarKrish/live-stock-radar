@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { toast } from "@/components/ui/sonner";
+import { toast } from "sonner";
 import { fetchStockData, StocksResponse } from "@/services/stockApi";
 
 export const useStockData = (refreshInterval = 30000) => {
